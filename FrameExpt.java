@@ -17,8 +17,16 @@ public class FrameExpt {
 		
 		//Creating the text
 		final Label l1 = new Label("Hello world");
-		l1.setBounds(150, 120, 130, 230);
+		l1.setBounds(200, 310, 300, 100);
 		f1.add(l1);
+		
+		
+		Button b = new Button("Enter");
+		b.setBounds(350,450,80,50);
+		f1.add(b);
+		
+		
+		final Font tf = new Font("Arial",Font.PLAIN,25);
 		
 		
 		
@@ -30,7 +38,7 @@ public class FrameExpt {
 			}
 			
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
+				l1.setFont(tf);
 				
 			}
 			
@@ -46,6 +54,7 @@ public class FrameExpt {
 			
 			public void mouseClicked(MouseEvent arg0) {
 				l1.setText("Mouse Clicked");
+				
 				
 			}
 		});
